@@ -1,15 +1,27 @@
 import java.util.Arrays;
 
 public class remDuplicates {
-    static String func(String output,String input){
+    static void func(String input,StringBuilder output, boolean map[]){
         if(input.isEmpty()){
-            return "";
+            System.out.println(output);
+            return;
         }
-        char ch=input.charAt(0);
-        //using converting loop into recursive calls
-        return ch+func(output,input.substring(1));
+        char ch = input.charAt(0);
+        if(map[ch-'a']==true){
+            //duplicate found, skip the element
+            func(input.substring(1),output,map);
+        }else{
+            //make that char's map true
+            map[ch-'a']=true;
+            func(input.substring(1),output.append(ch),map);
+        }
+
+
     }
     public static void main(String[] args) {
-        System.out.println((func("","appnnacollege")));
+        String input="appnnacollege";
+        boolean map[]=new boolean [26];  
+        StringBuilder output = new StringBuilder("");
+        func(input, output, map);
     }
 }
