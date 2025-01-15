@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 public class practice {
 
     // //DEC ORDER
@@ -145,9 +147,101 @@ public class practice {
     //     }
     // }
 
+
+    //find all the occurences
+    // static void func(int []arr, int target, int index){
+    //     if(index == arr.length){
+    //         return;
+    //     }
+
+    //     if(arr[index]==target){
+    //         System.out.print(index+" ");
+    //     }
+    //     func(arr, target, index+1);
+    // }
+
+
+    //1 to one
+    // static String mapping(char n){
+    //     HashMap<Character,String> map = new HashMap<>();
+    //     map.put('1', "one");
+    //     map.put('2', "two");
+    //     map.put('0', "Zero");
+    //     map.put('3', "three");
+    //     map.put('4', "four");
+    //     map.put('5', "five");
+    //     map.put('6', "six");
+    //     map.put('7', "seven");
+    //     map.put('8', "eight");
+    //     map.put('9', "nine");
+
+    //     return map.get(n);
+    // }
+    // static void func(String n, String ans){
+    //     if(n.isEmpty()){
+    //         System.out.println(ans);
+    //         return ;
+    //     }
+
+    //     char ch = n.charAt(0);
+    //     func(n.substring(1), ans+(mapping(ch))+" ");
+    // }
+
+    // // length of a string 
+    // static int func(String input, int ans){
+    //     if(input.isEmpty()){
+    //         return ans;
+    //     }
+    //     return func(input.substring(1), ans+1);
+    // }
+
+
+    // static int func(String input, int start, int end, int count) {
+    //     if (start == input.length()) {
+    //         return count;
+    //     }
+    
+    //     // substring from start to end
+    //     String substring = input.substring(start, end);
+    //     if (!substring.isEmpty() && substring.charAt(0) == substring.charAt(substring.length() - 1)) {
+    //         System.out.println(substring); 
+    //         count++; 
+    //     }
+    
+    //     if (end == input.length()) {
+    //         return func(input, start + 1, start + 1, count); 
+    //     }
+    //     return func(input, start, end + 1, count);
+    // }
+
+    // approach 2 -- easy
+    static int func(String input, int index, int count){
+        if(index == input.length()){
+            System.out.println(count);
+            return 0;
+        }
+
+        String subString = "";
+        for(int i=index;i<input.length();i++){
+            subString = subString + input.charAt(i);
+            if(subString.charAt(0)==subString.charAt(subString.length()-1)){
+                System.out.println(subString);
+                count++;
+            }
+        }
+        return func(input, index+1,count);
+    }
+
+
     public static void main(String[] args) {
-        // System.out.println(func(4));
-        // func(4,0,"");
+        String input1  = "abcab";
+        String input2  = "aba";
+        // System.out.println(func(input1, 0,0,0));
+        // System.out.println();
+        // System.out.println(func(input2, 0,0,0));
+        func(input1, 0, 0);
+        System.out.println();
+        func(input2, 0, 0);
     }
     
 }
