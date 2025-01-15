@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class remDuplicates {
     static void func(String input,StringBuilder output, boolean map[]){
