@@ -1,3 +1,5 @@
+package arrays_easy;
+
 class zerosToEnd{
     static int[] func(int a[]){
         int n=a.length;

@@ -39,6 +39,7 @@ public class mergeSort {
             temp[k++] = arr[j++];
         }
 
+        // ab temp to ban gya now we have to copy
         //copy item to original array
         for(k=0, i=start; k<temp.length; k++, i++){
             arr[i] = temp[k];

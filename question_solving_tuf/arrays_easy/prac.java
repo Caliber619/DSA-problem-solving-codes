@@ -1,3 +1,5 @@
+package arrays_easy;
+
 import java.util.ArrayList;
 
 public class prac {

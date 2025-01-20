@@ -1,4 +1,5 @@
-import java.util.*;
+package arrays_easy;
+
 
 public class searchInsertProblem {
 
