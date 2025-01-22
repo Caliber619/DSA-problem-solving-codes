@@ -169,6 +169,7 @@ public class arrayListPractice{
         list2.add(6);
 
         System.out.println(twoSum2(list1, 100));
+        System.out.println(twoSum2(list1, 100));
 
     }
 }
