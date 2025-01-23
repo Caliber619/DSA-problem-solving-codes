@@ -57,7 +57,7 @@ Contributions are always welcome! If you have a problem or an optimized solution
 ---
 
 ## 📬 Contact
-Feel free to connect with me on [LinkedIn](www.linkedin.com/in/kshitij-dev-496860247) or drop me an email at [Gmail](yadav.d.kshitij2003@gmail.com) for any queries or suggestions.
+Feel free to connect with me on (www.linkedin.com/in/kshitij-dev-496860247) or drop me an email at (yadav.d.kshitij2003@gmail.com) for any queries or suggestions.
 
 ---
 
