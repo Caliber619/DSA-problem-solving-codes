@@ -1,4 +1,4 @@
-// ------------------------------------------------------------ MY linked List
+// --------------------------------------------------------------------------------------------------------- MY linked List
 public class practiceLL {
 
 
@@ -237,7 +237,12 @@ public class practiceLL {
         return;
 
     }
-//------------------------------------------------------------------------ MY linked list
+
+    //---------------------------------------------------palindrome or not
+    public boolean palindrome(){
+        return true;
+    }
+//--------------------------------------------------------------------------------------------------------------- MY linked list
     public static void main(String[] args) {
         //now to create a linked list in our main class
         practiceLL ll = new practiceLL();
