@@ -279,6 +279,7 @@ public class practiceLL {
         ll.display();
         ll.deleteNthFromEnd(5);
         ll.display();
+        ll.display();
 
 
     }
