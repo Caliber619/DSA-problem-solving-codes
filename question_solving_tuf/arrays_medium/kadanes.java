@@ -1,4 +1,5 @@
 public class kadanes {
+    //brute force;
     static void func(int [] arr){
         //lets try to print all the sub-arrays
         // int arr[] = {-2,1,-3,4,-1,2,1,-5,4};
@@ -21,9 +22,13 @@ public class kadanes {
         System.out.println(maxCount);
         
     }
+
+    //optimal (two pointers)
+    //keep in mind that the suba
     public static void main(String[] args) {
         int arr[] = {-2,1,-3,4,-1,2,1,-5,4};
-        func(arr);
+        // func(arr);
+        func2(arr);
     }
     
 }
