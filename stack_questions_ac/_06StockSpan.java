@@ -9,9 +9,10 @@ public class _06StockSpan {
 
         stockSpan(stock,span);
 
-        for(int i =0; i<span.length; i++){
-            System.out.println(span[i]);
-        }
+        // for(int i =0; i<span.length; i++){
+        //     System.out.println(span[i]);
+        // }
+        System.out.println(Arrays.toString(span));
     }
 
     public static void stockSpan(int []stock, int []span){
