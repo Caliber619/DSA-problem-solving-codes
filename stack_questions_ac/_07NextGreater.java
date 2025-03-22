@@ -2,9 +2,30 @@ package stack_questions_ac;
 import java.util.*;
 
 public class _07NextGreater {
+
+    static void nextGreater(int arr[]){
+        int []nextGreaterArr = new int[arr.length];
+        // int arr[] = {6,8,0,1,3};
+        // backward traversal
+        Stack<Integer> s = new Stack<>();  //isme bhi index rakhege
+        for(int i=arr.length-1 ; i>=0; i--){
+            int curr = arr[i];
+            while (!s.isEmpty() && curr >= arr[s.peek()]) {
+                s.pop();
+            }
+            if (s.isEmpty()) {
+                nextGreaterArr[i] = -1;
+            }else{
+                nextGreaterArr[i] = arr[s.peek()];
+            }
+            s.push(i);
+        }
+
+        System.out.println(Arrays.toString(nextGreaterArr));
+    }
     public static void main(String args[]){
         int arr[] = {6,8,0,1,3};
-
+        nextGreater(arr);
         int n = arr.length;
         
         //Stack to store the indexes
