@@ -41,7 +41,7 @@ public class _06StackUsingTwoQueues {
             } else {// case 2
                 while (!q2.isEmpty()) {
                     top = q2.remove();
-                    if (q1.isEmpty()) {
+                    if (q2.isEmpty()) {
                         break;
                     }
                     q1.add(top);
