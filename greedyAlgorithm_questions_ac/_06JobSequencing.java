@@ -14,7 +14,6 @@ public class _06JobSequencing {
             id = i;
             deadline = d;
             profit = p;
-
         }
     }
     public static void main(String args[]){
